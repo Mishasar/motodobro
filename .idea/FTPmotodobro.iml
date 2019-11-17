@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/pma" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/google/apiclient" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/phpunit/phpunit-mock-objects" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/satooshi/php-coveralls" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/stopwatch" />
+      <excludeFolder url="file://$MODULE_DIR$/pma/vendor/symfony/yaml" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

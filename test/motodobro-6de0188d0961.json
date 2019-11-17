@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "motodobro",
+  "private_key_id": "6de0188d09614d0c2bd19245dde7a12aaa62338e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCXrmyI5dQovoSb\n3PTGEV4a9bcp/KICcZe3CHFrDxrDJpsu9TbuG/Nglksj8auUqfVivxHWSSBaxq0w\n13nYJXFqrpbAdl7vehTOgUt3BXzztSUa1DJCEYWPg9CtpdHJ3pNvRW09M5eJxpXp\nrg6BDFzcsRvw27bUhkChuLNSA0bKoRsWcb4rOGJqedT26Tg2frzzEJOrfS1YSboF\nNImngreFskiGUkSpe1J4ATxdfHUUzA9Uv8Qi5r+FLRMIUxgghANYP+Hu4sHwUyQV\nUe086M+gwPUh/JXwK4L8j3RmozaWmcKgjll2DmXAlIzakCj7zL91wHQLTkccTFuX\nu8aoH/BZAgMBAAECggEAESjqPfWUUjS1j2WIqpTB6vZj7aPXV0PvGEWkASrhCfVm\n5oHW4Eq4trNiFlOrp+KvcGex1qaIusRRyR4DepTH1zwfsW/izyBmVLNzbGhqSa7z\nXuzlL6zISaNtuwtwp7AeyV6XHG6nBO76vEhU+zwBEHWX9eCBd1sl2jXpUYyt2FQD\nfK07sHPPSgIZ8ZrslDWMReo3FSeAWepAWwgP3UomTYra/lPEsF0G2QM1Yhys5Vmb\nlNo95H4BnYPvWYkZtxb55tfjsCA549DdkOkeMbxsRBKozkoviWT97vicbQZvpnVd\nzGyTiDXQjOiyLEWXeVsTmfl1wM4EhQ1db7gXygr21QKBgQDMiV9eOsmh9NqskKsL\nKU7LbS6yz/e0DYn92o2GTDJ5LGVGMu13JvG2WBPVGl0wK/y5s7jK21tHwq0dmJ+r\nN93FL5SXwqx9egiI7qUQN4GMcjMiIqSExnOI9plxO2h8YWKZoc8hoMRM0ctMqaGX\nEQhNXugPCx9cqTaTKhWIZ403nQKBgQC92Iiy1bMDn3cFQoloB5A+MaSOeCWHVJ7W\ncP0ufMeCUcSqPP5FYNkRqmi08q/YwgR3i61+jMS80uhXg7HCaTvsJMHjJiEeUNHS\ne0EN6v5zyfezQCdPizmcF0IOMiX+7lrGkA3dsj+rZuI2NHqq/Hy3CkQsvsuBv9Gz\n2L701QkE7QKBgQC6+m3zT1yaMKNjE5E5T9bXQoVpM5Lmx2W5afzso2WUvlAKn23T\n+gcHQXdH3aUI731GKhSpZWQJst7c6nQ0aorSww9cuLtErbV1sGu26ncEdDVoZDDv\nrBdcQsq856k54zDm7zPSMwygiT0HZR7yYcCsMjGD5xARfiME33j1zGwdRQKBgQC6\nzeGcz0iJzRTJeTJJyf92I1T/11teMbbl3WJTpvaN1jXFKaUt0WFmz56eRpsfl7Hb\ni/aYqp1AC+wRiQWV/gS3lWevQqqd8Pq1uRBHSK8+ckKo//xuedmjLQOTgmb+1b0+\n2yq5thaOavs2SSdXLoDtf02cFdWcA4quBB3KPgHU9QKBgQDElF8vzqn0XB/C0TgD\nnsB+FO/dV7hu+zKRKSbhBxFyCi6Iib7ZYJ9TTPiw1kw/jE3an4hOkJYAHaev7PBt\n5Po8q5oJ/7IIXZayX+P+fIZHhiRzg/nTJqOFiHw2zWF6BFTT+7H3oYLIOa15ffzd\nIgqrPqu8fT6TvieNwsAsIgvfow==\n-----END PRIVATE KEY-----\n",
+  "client_email": "test-73@motodobro.iam.gserviceaccount.com",
+  "client_id": "117121179997913544524",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/test-73%40motodobro.iam.gserviceaccount.com"
+}

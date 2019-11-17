@@ -1,0 +1,592 @@
+@font-face {
+    font-family: 'segoe_ui';
+    src: url('../fonts/segoeui.eot');
+    src: url('../fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoeui.woff') format('woff'),
+    url('../fonts/segoeui.ttf') format('truetype'),
+    url('../fonts/segoeui.svg#segoe_uiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'segoe_ui';
+    src: url('../fonts/segoeuib.eot');
+    src: url('../fonts/segoeuib.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoeuib.woff') format('woff'),
+    url('../fonts/segoeuib.ttf') format('truetype'),
+    url('../fonts/segoeuib.svg#segoe_uibold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'segoe_ui';
+    src: url('../fonts/segoeuii.eot');
+    src: url('../fonts/segoeuii.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoeuii.woff') format('woff'),
+    url('../fonts/segoeuii.ttf') format('truetype'),
+    url('../fonts/segoeuii.svg#segoe_uiitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'segoe_ui_light';
+    src: url('../fonts/segoeuil.eot');
+    src: url('../fonts/segoeuil.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoeuil.woff') format('woff'),
+    url('../fonts/segoeuil.ttf') format('truetype'),
+    url('../fonts/segoeuil.svg#segoe_uilight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'segoe_ui_semibold';
+    src: url('../fonts/seguisb.eot');
+    src: url('../fonts/seguisb.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/seguisb.woff') format('woff'),
+    url('../fonts/seguisb.ttf') format('truetype'),
+    url('../fonts/seguisb.svg#segoe_uisemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {height: 100%; padding: 0; margin: 0; font-family: 'segoe_ui', 'arial', sans-serif;}
+ul, ol, li {margin: 0; padding: 0; list-style: none;}
+table {border-spacing: 0; border-collapse: collapse;}
+img {border: none;}
+
+body {background: url(../img/background.png) repeat;}
+
+a {font: normal 12px/18px 'Arial', sans-serif; color: rgb(37, 37, 37); text-decoration: none;}
+a:hover, a:focus {color: rgb(219, 90, 29); text-decoration: underline;}
+
+
+
+.cl, .clear {display: block; *display: inline-block; clear: both;}
+.cl:after, .clear:after, .cl:before, .clear:before {display: block; *display: inline-block; clear: both; content: "";}
+
+.sprite {display: inline-block; background: url(../img/sprite.png) no-repeat left top; vertical-align: top;}
+    .icon-confirmed {background-position: 0 -102px; width: 141px; height: 141px;}
+    .icon-shipping-grey {background-position: -143px -171px; width: 70px; height: 61px;}
+    .icon-card-and-money {background-position: -220px -170px; width: 70px; height: 64px;}
+    .icon-basket {background-position: -292px -171px; width: 70px; height: 58px;}
+    .icon-phone {background-position: -367px -170px; width: 64px; height: 64px;}
+    .icon-search {background-position: -435px -170px; width: 58px; height: 64px;}
+    .icon-shipping {background-position: -345px -236px; width: 64px; height: 60px;}
+    .icon-close {background-position: -413px -238px; width: 36px; height: 36px;}
+    .icon-triangle {background-position: -418px -283px; width: 8px; height: 4px;}
+    .icon-triangle.bottom {background-position: -432px -283px;}
+    .icon-phone-24 {background-position: -460px -256px; width: 24px; height: 20px;}
+    .advantages-icons {width: 48px; height: 48px;}
+        .icon-certificate {background-position: 0 -244px;}
+        .icon-money {background-position: -49px -244px;}
+        .icon-second-hand {background-position: -98px -244px;}
+        .icon-guaranty {background-position: -147px -244px;}
+        .icon-world {background-position: -196px -244px;}
+        .icon-map {background-position: -245px -244px;}
+        .icon-details {background-position: -294px -244px;}
+
+h1 {margin: 10px 0; font: normal 30px/32px 'segoe_ui_light', sans-serif; text-align: center; color: rgb(59, 59, 59);}
+    h1 span {font: normal 25px/28px 'segoe_ui_light', sans-serif;}
+h2 {margin: 15px 0 25px; font: normal 22px/24px 'segoe_ui', sans-serif;  color: rgb(59, 59, 59); text-align: center;}
+    h2 span {font: normal 18px/24px 'segoe_ui_light', sans-serif;}
+h3 {margin: 0 0 25px; font: normal 18px/24px 'segoe_ui_light', sans-serif; color: rgb(59, 59, 59); text-align: center;}
+h5 {margin: 20px 0 5px; font: bold 14px 'segoe_ui', sans-serif; text-transform: uppercase;}
+    h5 span {font: normal 14px/18px 'segoe_ui', sans-serif; text-transform: lowercase;}
+
+::selection {background: rgb(211, 102, 59); color: #fff;}
+::-moz-selection {background: rgb(211, 102, 59); color: #fff;}
+
+.main_wrapper {height: 100%;width:100%;display: table;padding: 0; margin: 0;}
+.wrapper {position: relative; margin: 0 auto; padding: 0 20px; width: 940px;}
+
+a.code_lnk {
+text-decoration: none; /* Убираем подчеркивание */
+border-bottom: 1px dashed #000000;  
+font-family:segoe_ui, arial, sans-serif;
+font-size:15px; 
+}
+a.code_lnk:hover {color: #db5a1d; border-bottom: 1px dashed #db5a1d; text-decoration: none; }
+
+.input-text {padding: 10px 10px 11px; background: rgb(186, 186, 186); border: none; border-radius: 3px; outline: none; box-shadow: inset 1px 1px 3px rgb(144, 144, 144); font: normal 14px/14px 'segoe_ui', sans-serif; color: #fff;  transition: all 0.5s;}
+.input-text:focus {background: rgb(85, 85, 85); box-shadow: inset 1px 1px 3px rgb(12, 12, 12); transition: all 0.5s;}
+input::-webkit-input-placeholder{padding-top: 3px; font: normal 14px/14px 'segoe_ui', sans-serif; color: #fff;}
+input:-moz-placeholder {padding-top: 3px; font: normal 14px/14px 'segoe_ui', sans-serif; color: #fff;}
+input::-moz-placeholder {padding-top: 3px; font: normal 14px/14px 'segoe_ui', sans-serif; color: #fff;}
+input:-ms-input-placeholder {padding-top: 3px; font: normal 14px/14px 'segoe_ui', sans-serif; color: #fff;}
+
+.btn {display: inline-block; outline: none; border: none; border-radius: 3px; font: normal 14px/14px 'segoe_ui', sans-serif; text-align: center; vertical-align: top; cursor: pointer;}
+.btn * {vertical-align: middle;}
+.btn i {margin-right: 7px;}
+.btn-orange {padding: 10px 25px; background: rgb(211, 102, 59); background: linear-gradient(rgb(220, 133, 98), rgb(211, 102, 59)); border-bottom: 1px solid rgb(124, 124, 124); color: #fff;}
+.btn-orange:hover {background: rgb(218, 145, 116);}
+.btn-orange:active {background: rgb(218, 145, 116); box-shadow: inset 0 0 5px rgb(160, 106, 85);}
+.btn-green {padding: 10px 25px; background: rgb(107, 210, 139); background: linear-gradient(rgb(122, 215, 151), rgb(89, 205, 125)); border-radius: 0 0 3px 3px; border-bottom: 1px solid rgb(127, 127, 127); color: #fff;}
+.btn-green:hover {background: rgb(141, 197, 159); border-bottom-color: rgb(119, 119, 119);}
+.btn-green:active {background: rgb(141, 197, 159); border-bottom-color: transparent; box-shadow: inset 0 1px 3px rgb(90, 126, 102);}
+    
+.protected-data {padding: 10px 15px; text-align: right;}    
+.protected-data.sets-1 {padding: 10px 0; margin: 0 auto; width: 85%;}   
+.protected-data.sets-2 {padding: 5px 0;}    
+.protected-data  a {font: normal 12px/14px 'segoe_ui', sans-serif; color: rgb(102, 102, 102); text-decoration: underline;}  
+.protected-data  a:hover {color: rgb(211, 102, 59);}    
+
+.header {background: #fff; padding: 0px; border-bottom: 1px solid rgb(228, 227, 227); box-shadow: 0 1px 0 #fff;}
+.logo {display: inline-block; text-align: center;}
+.logo .small {display: block; font: normal 11px/17px 'segoe_ui', sans-serif; color: rgb(172, 172, 172); width: 150px;}
+.header_right {float: right; padding: 0; width: 300px; text-align: right;}
+.header_center {text-align:center;}
+.header_right .btn-orange {margin-top: 12px;}
+.header_phone {display: inline-block; margin-right: 20px; padding: 5px 0 0; font: normal 16px/21px 'segoe_ui', sans-serif; vertical-align: top;}
+.header_phone a {font: bold 16px/21px 'segoe_ui', sans-serif;}
+.header_phone .small {display: block; font: normal 11px/17px 'segoe_ui', sans-serif; color: rgb(172, 172, 172);}
+.header_free-shipping {position: absolute; top: 100%; left: 0; display: inline-block; margin-top: 17px; z-index: 1;}
+.header_shadow {background: url(../img/shadow.png) no-repeat center; width: 1276px; height: 27px; position: absolute; bottom: -66px; left: -125px;}
+        
+.js-openTooltip {position: relative; cursor: pointer;}
+.tooltip {position: absolute; left: -30%; bottom: 150%; padding: 15px; background: rgb(76, 76, 76); border-radius: 2px; font: normal 13px/18px 'segoe_ui', sans-serif; color: rgb(210, 210, 210); text-shadow: 0 1px rgb(48, 48, 48); text-align: left; width: 230px; z-index: 5;}
+.advantages_item .tooltip {left: 0; right: 0; bottom: 110%; margin: 0 auto; width: 170px;}      
+    .advantages_item .tooltip .triangle {left: 0; right: 0; margin: 0 auto;}        
+    .tooltip .triangle {position: absolute; bottom: -20px; left: 30%; border: 10px solid transparent; border-top-color: rgb(76, 76, 76); width: 0; height: 0;}      
+        
+.nav {padding: 7px 0 10px; background: rgb(65, 65, 65); text-align: right; margin-bottom: 0px;}     
+    .nav_item {display: inline-block; margin-left: 13px; padding-left: 12px; border-left: 1px solid rgb(92, 92, 92);}
+    .nav_item:first-child {border-left: none;}
+        .nav_item a {display: block; font-size: 11px; text-transform: uppercase; color: #fff;}
+.nav-header {       
+background-color: #f5f5f5;  
+}   
+        
+            .free-shipping_content {position: relative; margin: 0; background: #fff; border-radius: 0 0 3px 3px; height: 0; opacity: 0; overflow: hidden; transition: height 0.3s, opacity 0.5s;}
+            .free-shipping_block .btn {position: relative; z-index: 2;}
+            .free-shipping_block.bottom .btn {border-radius: 3px 3px 0 0;}
+            .active .free-shipping_content {margin-top: -5px; height: 170px; border: 1px solid rgb(89, 205, 125); opacity: 1; transition: height 0.5s, opacity 1s;}
+                .free-shipping_content-body {padding: 20px 5px 5px; text-align: right;}
+                    .free-shipping_content .icon-shipping {position: absolute; left: 3px; top: 15px;}
+                    .free-shipping_block.bottom .icon-shipping {top: 60px;}
+                    .free-shipping_heading h5 {color: rgb(89, 205, 125);}
+                    .free-shipping_content-body p {margin: 0; font: normal 14px 'segoe_ui', sans-serif; color: rgb(59, 59, 59);}
+                .free-shipping_timer {padding: 7px 10px; background: rgb(242, 241, 241);}
+                    .free-shipping_left {float: left; max-width: 50%; font: normal 12px 'segoe_ui', sans-serif; color: rgb(59, 59, 59);}
+                    .free-shipping_right {float: right; max-width: 40%; font: normal 10px 'segoe_ui_semibold', sans-serif; color: rgb(59, 59, 59); text-align: right;}
+                        .free-shipping_right span {font: bold 12px 'segoe_ui', sans-serif; color: rgb(177, 150, 28);}
+
+.popup-wrapper {background: url(../img/popup-back.png) repeat; width: 100%; height: 100%; position: fixed; z-index: 100; left: 0; top: 0; text-align: center; display: none;}
+.popup-wrapper:after {display: inline-block; height: 100%; width: 0; vertical-align: middle; content: ''}
+    .popup {background: #fff; display: inline-block; position: relative; margin: 0 auto; z-index: 101; vertical-align: middle; text-align: center; width: 40%; padding: 35px; box-shadow: 0 0 10px rgb(144, 144, 144); max-width: 400px;}
+    .popup.confirmed {padding: 80px 35px 100px; background: rgb(59, 59, 59); color: #fff;}
+    .popup.confirmed h2 {margin: 20px 0 0; color: #fff;}
+    .popup.confirmed h3 {margin: 5px 0 0; font: normal 17px/25px 'segoe_ui_semibold', sans-serif; color: #fff;}
+    .popup h2 {margin-top: 0;}
+    .popup .btn {width: 85%;}
+    .popup .input-text {margin-bottom: 15px; width: 80%;}
+    .popup .icon-close {position: absolute; right: -17px; top: -19px; cursor: pointer; transition: all 0.3s;}
+    .popup .icon-close:hover {opacity: 0.7; transition: all 0.5s;}
+
+
+.bike-block {padding: 20px 0 0;}
+    .bike-block_content {position: relative; margin-top: 30px;}
+        .bike-block_content .bike {display: block; margin: -100px auto 0; background: url(../img/bike-4.png) no-repeat center; width: 911px; height: 445px;}
+        .bike-block_form-wrap {position: absolute; left: 23.5%; bottom: 0; display: block; overflow: hidden; height: 51px; transition: all 1s;}
+        .bike-block_form-wrap.active {height: 345px;}
+        .bike-block_btn {padding-top: 17px; background: url(../img/sprite.png) no-repeat 0 -51px; width: 502px; height: 34px; font: bold 22px/24px 'segoe_ui', sans-serif; color: #fff; text-shadow: 0 1px 1px rgb(107, 38, 10); text-align: center; cursor: pointer;}
+        .bike-block_btn:hover {background-position: 0 0;}
+        .active .bike-block_btn {background-position: 0 0; cursor: default;}
+        .bike-block_form {padding: 30px 20px 15px; background: #fff;}
+            .bike-block_fieldset {margin-bottom: 20px;}
+                .bike-block_fieldset .input-text:first-child {margin-right: 4%;}
+                .bike-block_fieldset .input-text {width: 43%;}
+                .bike-block_fieldset .btn-orange {width: 47%;}
+
+.moto_set {display: block; margin: 0 auto 30px; padding: 0 0 20px; border-bottom: 1px dashed rgb(200, 200, 200); width: 100%;}              
+                
+.advantages-block {padding: 10px 0 20px; background: #fff; background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 255, 255, 0.2)); border-top: 1px solid #fff; border-bottom: 1px solid #fff; box-shadow: inset 0 1px 1px rgb(239, 238, 238), inset 0 -1px 1px rgb(239, 238, 238); text-align: center;}
+    .advantages_list {padding: 10px 0;}
+        .advantages_item {display: inline-block; margin-left: 2%; vertical-align: top; width: 26%;}
+        .advantages_item .advantages-icons {position: relative; top: 0; opacity: 1; transition: all 0.5s;}
+        .advantages_item:hover .advantages-icons {top: -10px; opacity: 0.7; transition: all 0.5s;}
+        .advantages_item:first-child, .advantages_item.first {margin-left: 0; width: 28%;}
+            .advantages_icon {display: inline-block; padding: 12px 0 0; margin: 0 0 15px; background: rgb(61, 61, 61); font-size: 18px; color: #fff; width: 50px; height: 37px; border-radius: 100%; transition: all 0.5s;}
+            .advantages_item.red .advantages_icon {border: 3px solid rgb(201, 62, 62);}
+            .advantages_item.red:hover .advantages_icon {background: rgb(201, 62, 62); box-shadow: inset 0 0 0 40px rgb(201, 62, 62);}
+            .advantages_item.orange .advantages_icon {border: 3px solid rgb(228, 134, 72);}
+            .advantages_item.orange:hover .advantages_icon {background: rgb(228, 134, 72); box-shadow: inset 0 0 0 40px rgb(228, 134, 72);}
+            .advantages_item.yellow .advantages_icon {border: 3px solid rgb(229, 212, 86);}
+            .advantages_item.yellow:hover .advantages_icon {background: rgb(229, 212, 86); box-shadow: inset 0 0 0 40px rgb(229, 212, 86);}
+            .advantages_item .advantages-icons {margin-bottom: 10px; transition: all 0.5s;}
+            .advantages_item p {margin: 0; font: normal 16px/24px 'segoe_ui_light', sans-serif; color: rgb(59, 59, 59);}
+    .advantages-shadow-top {position: absolute; left: -165px; top: -44px; background: url(../img/shadow-0.png) no-repeat; width: 1395px; height: 18px;}
+    .advantages-shadow-bottom {position: absolute; left: -170px; bottom: -51px; background: url(../img/shadow-1.png) no-repeat; width: 1400px; height: 30px;}
+
+.general-form {padding: 15px 0 30px; border-bottom: 1px solid rgb(192, 191, 191);}
+    .general-form .btn-orange {margin-left: 5%;}
+    .general-form .input-text {margin-right: 2%; width: 20%;}
+    
+.general-form.sets-1 {margin: 2px 0; background: rgb(40, 40, 40);}
+    .general-form.sets-1 h2 {color: #fff;}
+    .general-form.sets-1 .btn-orange {background: rgb(206, 107, 67); background: linear-gradient(rgb(228, 116, 71), rgb(188,78, 35)); border-bottom-color: rgb(29, 29, 29);}
+    .general-form.sets-1 .input-text {background: #fff; box-shadow: none; color: rgb(50, 50, 50);}
+    .general-form.sets-1 .input-text:focus {background: rgb(211, 211, 211); box-shadow: none; color: rgb(50, 50, 50);}
+    .general-form.sets-1 input::-webkit-input-placeholder{color: rgb(50, 50, 50);}
+    .general-form.sets-1 input:-moz-placeholder {color: rgb(50, 50, 50);}
+    .general-form.sets-1 input::-moz-placeholder {color: rgb(50, 50, 50);}
+    .general-form.sets-1 input:-ms-input-placeholder {color: rgb(50, 50, 50);}
+
+.about-bike_block {padding: 15px 0; background: rgb(232, 232, 232); border-top: 1px solid rgb(192, 191, 191); border-bottom: 1px solid rgb(192, 191, 191);}
+    .about-bike_content_left {position: relative; display: inline-block; width: 600px; vertical-align: top;}
+        .about-bike_content_left .bike-2 {display: block; margin: 0 auto; background: url(../img/bike-2.png) no-repeat; width: 534px; height: 318px;}
+        .about-bike_content_left .item {position: absolute; display: inline-block; padding: 5px; background: rgb(211, 102, 59); border: 2px solid rgb(229, 229, 229); border-radius: 50px; color: #fff; font: normal 14px/14px 'segoe_ui_semibold', sans-serif; min-width: 14px; min-height: 14px; text-align: center;}
+        .about-bike_content_left .item-1 {left: 55px; top: 30px;}
+        .about-bike_content_left .item-2 {left: 110px; top: 50px;}
+        .about-bike_content_left .item-3 {left: 260px; top: 100px;}
+        .about-bike_content_left .item-4 {left: 270px; top: 30px;}
+        .about-bike_content_left .item-5 {right: 90px; top: 45px;}
+        .about-bike_content_left .item-6 {right: 145px; top: 75px;}
+        .about-bike_content_left .item-7 {right: 100px; top: 155px;}
+        .about-bike_content_left .item-8 {right: 195px; top: 185px;}
+        .about-bike_content_left .item-9 {left: 265px; top: 215px;}
+        .about-bike_content_left .item-10 {left: 180px; top: 185px;}
+    .about-bike_content_right {display: inline-block; margin-left: 60px; padding: 40px 0 0; width: 260px; vertical-align: top;}
+        .about-bike_list-item {font: normal 14px/24px 'segoe_ui_light', sans-serif; color: rgb(59, 59, 59);}
+            .about-bike_list-item a {display: inline-block; padding: 3px; font: normal 14px/18px 'segoe_ui_light', sans-serif; color: rgb(59, 59, 59);}
+            .about-bike_list-item a:hover {background: rgb(211, 102, 59); color: rgb(236, 236, 236); text-decoration: none; transition: background-color 0.5s, color 0.1s;}
+            .about-bike_list-item b {font-family: 'segoe_ui', sans-serif;}
+
+.our-work-block {padding: 20px 0 30px; border-top: 1px solid #fff;}
+    .our-work_list {margin-top: 50px; text-align: center;}
+        .our-work_item {display: inline-block; position: relative; margin-left: 2%; font: normal 15px 'segoe_ui', sans-serif; color: #888; width: 12%; vertical-align: top;}
+        .our-work_item:first-child {margin-left: 0;}
+            .our-work_item .step {position: absolute; right: 10px; top: -30px; display: inline-block; padding: 1px; width: 12px; height: 12px; border: 3px solid rgb(106, 192, 243); border-radius: 50px; font: normal 14px/12px 'segoe_ui_semibold', sans-serif; color: #888;}
+            .our-work_picture {margin-bottom: 15px; min-height: 65px; font-size: 45px;}
+                .our-work_item .our-work_picture i {position: relative; top: 0; transition: top 0.8s;}
+                .our-work_item:hover .our-work_picture i {top: -15px; transition: top 0.5s;}
+                .our-work_item:hover .icon-search {background-position: -435px -104px;}
+                .our-work_item:hover .icon-phone {background-position: -367px -104px;}
+                .our-work_item:hover .icon-basket {background-position: -292px -106px;}
+                .our-work_item:hover .icon-shipping-grey {background-position: -143px -105px;}
+                .our-work_item:hover .icon-card-and-money {background-position: -220px -103px;}
+                
+.feedback-block {padding: 10px 0 30px; background: rgb(47, 47, 47); border-top: 1px solid rgb(83, 83, 83); border-bottom: 1px solid rgb(83, 83, 83);}
+    .feedback-block h2 {margin: 0; padding: 15px 0 25px; color: #fff; }
+        .feedback_item {margin-top: 20px; padding-top: 20px; border-top: 1px dashed rgb(76, 76, 76);}
+        .feedback_item:first-child {margin-top: 0; padding-top: 0; border-top: none;}
+            .feedback_picture {display: inline-block; margin-right: 20px; background: #000; width: 70px; height: 70px; border-radius: 100%; vertical-align: top; overflow: hidden;}
+            .feedback_text {display: inline-block; color: #fff; vertical-align: top; width: 835px;}
+                .feedback_text span {display: inline-block; padding: 2px 4px; background: rgb(144, 163, 73); font-size: 10px; text-transform: uppercase; color: #fff;}
+                .feedback_text p {margin: 0;}
+                
+.about-block {padding: 20px 0; background: #fff; border-bottom: 1px solid rgb(214, 214, 214);}              
+    .about-block img {display: block; margin: 0 auto;}              
+
+.work-number-block {padding: 10px 0; background: #fff; border-bottom: 1px solid rgb(192, 191, 191);}
+    .work-number_list {padding: 20px 0; text-align: center;}
+        .work-number_item {display: inline-block; width: 15%; margin-left: 2%; vertical-align: top;}
+        .work-number_item:first-child {margin-left: 0; width: 14%;}
+        .work-number_item:hover .work-number_name {text-decoration: underline;}
+            .work-number_circle {display: inline-block; margin-bottom: 15px; background: #fff; border: 2px solid rgb(85, 85, 85); border-radius: 100px; width: 100px; height: 100px; text-align: center; font: bold 20px 'segoe_ui', sans-serif; overflow: hidden;}
+            .work-number_circle img {width: 100%; height: auto;}
+            .work-number_name {font: normal 14px 'segoe_ui_light', sans-serif; color: rgb(0, 0, 0);}
+
+.footer {padding: 10px 0; background: rgb(72, 72, 72); border-top: 2px solid rgb(143, 143, 143);}
+    .footer_free-shipping {position: absolute; bottom: 100%; margin-bottom: 12px;}
+    .footer_logo {display: inline-block; vertical-align: top; margin-top: -16px;}
+        .footer_logo a {display: block;}
+        .company_info {display: block; margin: 10px 0 0; font-size: 10px; color: rgb(107, 107, 107); text-align: center;}
+    .footer_place {padding-top: 5px; margin-right: 60px; display: inline-block; font: normal 16px 'segoe_ui_light', sans-serif; color: #fff; vertical-align: top; text-align: right;}
+    .footer_contact {padding-top: 5px; margin-right: 55px; display: inline-block; font: normal 16px 'segoe_ui_light', sans-serif; color: #fff; vertical-align: top; text-align: right;}
+        .footer_contact_left, .footer_contact_right {display: inline-block; vertical-align: top;}
+        .footer_contact_left {margin-right: 5px;}
+        .footer_contact_right {font-family: 'segoe_ui', sans-serif;}
+            .footer_contact_right .small {font-size: 10px;}
+
+    .footer_call {padding-top: 15px; display: inline-block; vertical-align: top;}
+    
+.crew-list {margin: 0 0 20px;}
+    .crew-item {margin-left: 2.5%; width: 18%; float: left;}
+    .crew-item:first-child {margin-left: 0;}
+    .crew-item .pic {width: 169px; height: 169px; border-radius: 100%; border: 6px solid rgb(242,242,242); box-sizing: border-box;}
+        .crew-item .pic img {width: 100%; height: auto; min-height: 100%; border-radius: 100%;}
+    
+@media screen and (max-width: 1500px){
+    .header_shadow, .advantages-shadow-top, .advantages-shadow-bottom {display: none;}
+}
+
+.header,
+.content,
+.footer {
+    display: table-row;
+}
+.content {
+  height: 100%;
+}
+
+.header,
+.footer {
+    height: 1px; /* Метод, делающий наш футер "липким" */
+}
+.footer-links a {display: inline-block; padding: 3px; font: normal 14px/18px 'segoe_ui_light', sans-serif; color: #fff;}
+a.drop-links {
+text-decoration: none; /* Убираем подчеркивание */
+border-bottom: 1px dashed #000000;  
+font-family:segoe_ui, arial, sans-serif;
+font-size:14px;
+}
+
+.sticky-content.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.sticky {
+  position: fixed;
+}
+.stop {
+  position: relative;
+}
+
+a.drop-links-big {
+text-decoration: none; /* Убираем подчеркивание */
+border-bottom: 1px dashed #000000;  
+font-family:segoe_ui, arial, sans-serif;
+font-size:18px; 
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.btn-circle {
+  border-radius: 24px;
+}
+
+.funkyradio label {
+    /*min-width: 400px;*/
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+    font-weight: normal;
+}
+.funkyradio input[type="radio"]:empty, .funkyradio input[type="checkbox"]:empty {
+    display: none;
+}
+.funkyradio input[type="radio"]:empty ~ label, .funkyradio input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.funkyradio input[type="radio"]:empty ~ label:before, .funkyradio input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before, .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label, .funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+.funkyradio input[type="radio"]:checked ~ label:before, .funkyradio input[type="checkbox"]:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #ccc;
+}
+.funkyradio input[type="radio"]:checked ~ label, .funkyradio input[type="checkbox"]:checked ~ label {
+    color: #777;
+}
+.funkyradio input[type="radio"]:focus ~ label:before, .funkyradio input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+.funkyradio-default input[type="radio"]:checked ~ label:before, .funkyradio-default input[type="checkbox"]:checked ~ label:before {
+    color: #333;
+    background-color: #ccc;
+}
+.funkyradio-primary input[type="radio"]:checked ~ label:before, .funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #337ab7;
+}
+.funkyradio-success input[type="radio"]:checked ~ label:before, .funkyradio-success input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5cb85c;
+}
+.funkyradio-danger input[type="radio"]:checked ~ label:before, .funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #d9534f;
+}
+.funkyradio-warning input[type="radio"]:checked ~ label:before, .funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #f0ad4e;
+}
+.funkyradio-info input[type="radio"]:checked ~ label:before, .funkyradio-info input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5bc0de;
+}
+#citys5{width:90%;left:5%;-webkit-box-shadow:5px 5px 40px 5px #8C8B8B;box-shadow:5px 5px 40px 5px #8C8B8B;background:none repeat scroll 0 0 #FFFFFF;padding-top:11px;padding-left:20px;position:absolute;top: 154px;display:none;z-index:9999;}
+#citys5 ul{padding:10px 0 0 0;margin-bottom:0px;}
+#citys5 ul li{list-style:none;display:inline-block;width:12px;margin-left:0;margin-right:10px;padding-left:5px;cursor:pointer;}
+#citys5 ul li a{text-decoration:none;font-size:15px;text-shadow:0 1px 2px #fff;color:#000000}
+#citys5 ul li a:hover{border-bottom:1px dashed #000000;color:#000000}
+.letter-list5{padding-left: 30px;}
+.letter-list5 ul li:hover{border-bottom:1px dashed #000000;color:#000000}
+#citys5 ul div{position:absolute;display:none;}
+#citys5 div div div ul li{width:140px;vertical-align:top;}
+#citys5 ul#main-citys5{width: 300px;display:inline-block;}
+#citys5 ul#main-citys5 li{width:140px;}
+#city5{cursor:pointer;font-size: 11px;display:inline-block;font-style:bold;font-weight:bold;}
+.span25{width:210px !important;}
+.halftop5 h4{min-height:50px;}
+.mci5{display:inline-block;}
+.letter-list5 ul{margin-left:55px;}
+#current-choice5{margin-bottom:15px;}
+.active-letter5{border-bottom:1px dashed #000000;color:#000000}
+.cit5{cursor:pointer;font-size: 11px;display:inline-block;text-transform: uppercase;height:0px;font-style:bold;/* margin-top: 13px; */}
+
+/*
+.sub-menu{
+    background-color: black;
+}
+*/
+.thumbnails{        
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-collapse{
+    display: none;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.navbar-collapse li{
+    display: block;
+}
+.navbar-collapse li a{
+    color: white;
+    font-size: 16px;
+}
+.tab-parts{
+    z-index: 999;
+}
+.tab-parts li a{
+    color: white;
+}
+.tab-parts li a.active{
+    color: black;
+}
+.tab-parts li a:hover{
+    color: black;
+}
+.basket-badge{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 15px;
+}
+.model-units{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-between;
+}
+.unit-image{
+    width: 150px;
+}
+.brand-links{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.brand-links a{
+    display: block;
+}
+#globalError {
+    z-index: 2000; 
+    position: fixed; 
+    right: 1px; 
+    left: 1px; 
+    top: 1px;
+    text-align: center;
+    background: red;
+    border-color: white;
+    color: white;
+}
+
+@media (min-width: 980px) {
+    .desctop{
+        display: block !important;
+    }
+    .phone{
+        display: none !important;
+    }
+    .main-title{
+        font-size: 30px;
+        text-align: center;
+    }    
+}
+
+@media (max-width: 979px) {
+    .desctop{
+        display: none !important;
+    }
+    .navbar-fixed-top, .tab-fixed-top{
+        position: fixed !important;
+    } 
+    .tab-fixed-top{
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+    }
+    .phone{
+        display: block !important;
+    }
+    .main-title{
+        font-size: 14px;
+        text-align: center;
+    }    
+    .header, .content{
+        display: inline;
+    }
+    .footer{
+        display: block;
+        min-height: 100px;
+        height: auto;
+    }
+    .main_wrapper .navbar-inner{
+        border-radius: 0;        
+    }
+    .navbar-inverse.phone{
+        margin-bottom: 0;
+    }
+    .main_wrapper{
+        display: block;
+    }    
+    .wrapper{
+        width: 100%;
+        padding : 0;
+    }
+    .sub-menu .wrapper .span4{
+        padding-right: 10px;
+    }
+}
+@media(max-width: 768px){
+    .tablet{
+        display: none;
+    }
+    

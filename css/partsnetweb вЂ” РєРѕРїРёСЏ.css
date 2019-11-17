@@ -1,0 +1,396 @@
+ @font-face { font-family:marmelad; src:/fonts/marmelad.ttf;}
+
+      body {
+
+        padding-top: 40px;
+
+		font-family: Marmelad, serif;
+
+		color: #6D7581;
+
+		font-size: 13px;
+
+		background-image:url('/img/head.jpg');
+
+		background-repeat:repeat-x;
+
+		background-position:left top;
+
+      }
+
+	  h3 {
+
+	    color: #333333;	  
+
+	  }
+
+	  h3 small{
+
+		  font-size:20px;
+
+		  font-weight: normal;
+
+		  line-height: 1;
+
+		  color: #999999;
+
+		}
+
+	  .phone_header {
+
+	    display: inline-block;
+
+		font-family: Marmelad, serif;
+
+		font-size:20px;
+
+		color:#ffffff;
+
+		padding-top:10px;
+
+	  }
+
+	  .phone_header_small {
+
+	    display: inline-block;
+
+		margin-left:100px;
+
+	  }	
+
+	  .header_bg {
+
+	    padding-top: 10px;
+
+	  } 
+
+.footer {
+
+  text-align: center;
+
+  padding: 15px;
+
+  background-color: #1B1B1B;
+
+}
+
+.footer-info {
+
+	margin-top: 70px;
+
+	background: #515151;
+
+}
+
+.footer-info center{
+
+	width:760px;
+
+	margin:0 auto;
+
+}
+
+.footer p {
+
+  margin-bottom: 0;
+
+  color: #777;
+
+}
+
+.footer-links {
+
+  margin: 10px 0;
+
+}
+
+.footer-links li {
+
+  display: inline;
+
+  padding: 0 2px;
+
+}
+
+.footer-links li:first-child {
+
+  padding-left: 0;
+
+}
+
+	  
+
+A:link.m_model_s, A:visited.m_model_s, A:active.m_model_s, A:hover.m_model_s
+
+   {  font-size: 30px; text-decoration: none; }
+
+A:hover.m_model_s
+
+   { text-decoration: underline; }	
+
+   
+
+/*---add_yar---*/
+
+
+
+#banner_1 {margin-top: 20px;}
+
+#banner1_cat {margin-bottom: 20px; text-align: center;}
+
+
+
+/*------*/
+
+
+
+.top-header > img,.top-header > div {
+
+	float: left;
+
+}
+
+.worktime, .address {
+
+	margin: 20px 12px 0;
+
+	padding: 0 0 0 25px;
+
+	background-image: url(/img/iconss21.png);
+
+	background-repeat:no-repeat;
+
+	background-size: 22px auto;
+
+	font-size:14px;
+
+	color:#000;
+
+}
+
+.footworktime, .footaddress {
+
+	display:inline-block;
+
+	text-align:center;
+
+	padding: 12px 0 12px 40px;
+
+	background-image: url(/img/iconss21.png);
+
+	background-repeat:no-repeat;
+
+	background-size: 22px auto;
+
+	font-size:14px;
+
+	color:#fff;
+
+}
+
+.footworktime {
+
+	float:left;
+
+	background-position: 0 -75px;
+
+}
+
+.footaddress {
+
+	background-position: 0 -118px;
+
+}
+
+.top-header .extform  img{
+
+	margin-top: 20px;
+
+}
+
+.worktime {
+
+	background-position: 0 10px;
+
+}
+
+.address {
+
+	background-position: 0 -36px;
+
+}
+
+
+
+#parent_popup {
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    bottom: 0;
+
+    display: none;
+
+    left: 0;
+
+    position: fixed;
+
+    right: 0;
+
+    top: 0;
+
+    z-index: 99999;
+
+}
+
+
+
+#popup {
+
+    box-shadow: 0 0 20px #000;
+
+    margin: 10% auto;
+
+    padding: 1px;
+
+    position: relative;
+
+    width: 520px;
+
+}
+
+
+
+.close_popup {
+
+    background: url("/img/cross.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+    border-radius: 15px;
+
+    box-shadow: 1px 1px 3px #000;
+
+    color: rgba(255, 255, 255, 0.898);
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    height: 35px;
+
+    line-height: 24px;
+
+    position: absolute;
+
+    right: -16px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.898);
+
+    top: -15px;
+
+    width: 35px;
+
+}
+
+#Shaf_Priv_Cab {
+
+margin: 1px;
+
+width: 230px;
+
+        padding-left: 70px;
+
+		font-family: Marmelad, serif;
+
+		color: white;
+
+		font-size: 12px;
+
+		background-image:url('/img/img.png');
+
+		background-repeat:no-repeat;
+
+		background-position:left top;
+
+      }
+
+a[href="exit.php"] {
+	color: orange;
+}
+
+.fl{
+	float: left;
+}
+img.fl{
+	margin: 0 20px 20px 0;
+}
+.fr{
+	float: right;
+}
+img.fr{
+	margin: 0 0 20px 20px;
+}
+.ofh{
+	overflow: hidden;
+}
+.b-center{
+	margin: 0 auto;	
+}
+.t-center{
+	text-align: center;
+}
+.otztable {
+	text-align: center;
+}
+.otztable div {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+.otztable div:first-child {
+	margin-right: 40px;
+}
+.otztable div p {
+	text-align: left;
+}
+.otztable div p:first-child {
+	font-weight: bold;
+}
+.otztable div img {
+	float: left;
+	width: 40%;
+	margin-right: 10px;
+	height: 110px;
+}
+.ggallery {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.ggallery a {
+	width: 19%;
+	overflow: hidden;
+	text-align: center;
+}
+.ggallery img {
+	height: 150px;
+}
+
+
+@media (max-width: 767px) {
+	.otztable div {
+		width: 100%;
+	}
+	.otztable div:first-child {
+		margin-right: 0;
+	}
+	.otztable div img {
+		height: auto;
+	}
+	
+}

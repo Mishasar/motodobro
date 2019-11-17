@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/pma/vendor/composer" />
+      <path value="$PROJECT_DIR$/pma/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/pma/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/pma/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/pma/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/pma/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/pma/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/pma/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/pma/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/pma/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/phpunit-mock-objects" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/pma/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/pma/vendor/satooshi/php-coveralls" />
+      <path value="$PROJECT_DIR$/pma/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/pma/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/pma/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/pma/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/pma/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/pma/vendor/phpunit/phpunit-selenium" />
+      <path value="$PROJECT_DIR$/pma/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/pma/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/pma/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/pma/vendor/sebastian/recursion-context" />
+    </include_path>
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/pma/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>

@@ -1,0 +1,31 @@
+@import url("../../../css/mform.css");
+
+.exform_wrapper.specoffers {width:420px; font:bold 16px tahoma; color:#000; background:#dceddb; border:2px solid #080; padding:8px 3px;}
+
+.exform_wrapper.specoffers .exform_stop, .exform_wrapper.specoffers .exform_header, .exform_wrapper.specoffers .exform_addmsg {text-align:left; margin:3px 0 0 10px;}
+.exform_wrapper.specoffers .exform_stop {font-size:22px; color:red;}
+.exform_wrapper.specoffers .exform_header {font-size:14px; padding:5px 0; color:green;}
+.exform_wrapper.specoffers .exform_addmsg {font-size:12px; }
+
+.exform_wrapper.specoffers .exform_wrapper input[type="text"]:focus, .exform_wrapper.specoffers .exform_wrapper textarea:focus {background:#ffd;}
+
+.exform_wrapper.specoffers .inpt_wrpr {margin:5px 0 5px -10px; padding:20px; width:240px; float:left;}
+.exform_wrapper.specoffers form[name="exform"]{ background:url(label.png) 86% 26% no-repeat;}
+
+.exform_wrapper.specoffers input[type="text"] {width:100%; border:1px solid #ccc; font-size:14px; padding:8px 4px; margin:2px 0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+
+.exform_wrapper.specoffers div.err {height:0; float:right; position:relative; left:0; top:11px;}
+
+.exform_wrapper.specoffers .mf_submit {text-align:center; margin-top:7px;}
+.exform_wrapper.specoffers .mf_submit input{width:45%; padding:7px; margin:0 7px 7px; font-size:20px; text-transform:uppercase; color:#fff!important; border:2px solid #080; background:#080; 
+border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+
+.exform_wrapper.specoffers .exf_captcha {margin:-20px 0 5px -10px; padding:20px; }
+.exform_wrapper.specoffers .exf_captcha input[type="text"], .exform_wrapper.specoffers .captcha_img {float:left;}
+.exform_wrapper.specoffers .exf_captcha input[type="text"] {width:190px;}
+.exform_wrapper.specoffers .captcha_img {width:160px; height:34px; margin:2px 0 0 4px;} 
+#mf_captcha_specoffers {width:160px; border:solid 1px #ccc;}
+.exform_wrapper.specoffers .exf_captcha a {display:block; width:32px; height:32px; float:right; margin:4px -10px 0 0; background:url(refresh.png);}
+
+.exform_wrapper.specoffers.finmsg {width:400px; min-height:50px; padding:10px; position:absolute; left:50%; top:50%; margin:-60px 0 0 -200px;}
+.exform_wrapper.specoffers.finmsg p{text-align:center;}

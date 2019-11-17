@@ -1,0 +1,34 @@
+AddDefaultCharset utf-8
+
+<ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+</ifModule>
+
+<ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^robots.txt$ /robots.php [L,QSA]
+</ifModule>
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_URI} !\.(js|css|jpg|jpeg|gif|png)$ [or]
+    RewriteCond %{REQUEST_FILENAME} !\.(txt|xml)$
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [L,QSA]
+	RewriteRule ^sitemap.xml$ /xml.php [L,QSA]
+  RewriteRule ^sitemap1.xml$ xml1.php [L,QSA]
+  RewriteRule ^sitemap2.xml$ xml2.php [L,QSA]
+  RewriteRule ^sitemap3.xml$ xml3.php [L,QSA]
+  RewriteRule ^sitemap4.xml$ xml4.php [L,QSA]
+  RewriteRule ^sitemap5.xml$ xml5.php [L,QSA]
+  RewriteRule ^sitemap6.xml$ xml6.php [L,QSA]
+  RewriteRule ^sitemap7.xml$ xml7.php [L,QSA]
+  RewriteRule ^sitemap8.xml$ xml8.php [L,QSA]
+  RewriteRule ^sitemap9.xml$ xml9.php [L,QSA]
+
+</ifModule>
